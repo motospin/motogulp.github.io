@@ -626,8 +626,16 @@ to{
     padding-top: 100px;
 }
 
-/* =============== Sleep ================*/ 
+/* =============== Shop ================*/ 
+  
+.shop{
+     background-image: url("../images/shop/shop-bg.png");
+     background-repeat: no-repeat;
+     background-position: right center;
+}
 
-
+.shop__slider{
+    padding-left: 132px;
+}
 
 @import "media";
