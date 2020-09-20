@@ -33,12 +33,17 @@ $('.slider-map').slick({
     focusOnSelect: true,
 });
 
-$('.holder__slider').slick({
+$('.holder__slider, .shop__slider').slick({
     infinite: true,
     fade: true,
     prevArrow: '<img class="slider-arrows slider-arrows-left" src="images/arrows-left.svg" alt=""></img>',
     nextArrow: '<img class="slider-arrows slider-arrows-right" src="images/arrows-right.svg" alt=""></img>',  
 });
+
+
+
+
+
 
 /*========================*/ 
 
@@ -89,6 +94,12 @@ $('.holder__slider').slick({
     });
     
     
+
+$('.surfboard-box__circle').on('click', function(){
+    $(this).toggleClass('active')
+});
+
+
 
 }); 
 

@@ -91,10 +91,3 @@ gulp.task('build', gulp.series('clean', 'export'))
 gulp.task('default', gulp.parallel('css' ,'scss', 'js', 'browser-sync', 'watch'));
 
 var deploy = require('gulp-deploy-git');
-
-gulp.task('deploy', function() {
-  return gulp.src('dist/**/*', { read: false })
-    .pipe(deploy({
-      repository: 'https://github.com/motospin/motospin.github.io/tree/master/Surf'
-    }));
-});
